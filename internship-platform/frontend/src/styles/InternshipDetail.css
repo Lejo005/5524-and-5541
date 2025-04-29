@@ -1,0 +1,322 @@
+/* InternshipDetail.css - Modern styling for VirtualIntern internship details */
+
+.internship-detail-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .internship-detail-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .back-link {
+    margin-bottom: 1.5rem;
+  }
+  
+  .back-link a {
+    display: inline-flex;
+    align-items: center;
+    color: #4568dc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .back-link a:hover {
+    color: #b06ab3;
+    transform: translateX(-5px);
+  }
+  
+  .back-link i {
+    margin-right: 0.5rem;
+  }
+  
+  .internship-detail-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  .company-info {
+    margin-bottom: 1.5rem;
+  }
+  
+  .company-name {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .internship-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  .detail-item i {
+    color: #4568dc;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .internship-detail-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  
+  .internship-detail-main {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .internship-section {
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .internship-section:last-child {
+    border-bottom: none;
+  }
+  
+  .internship-section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .internship-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+    border-radius: 3px;
+  }
+  
+  .internship-section p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .requirement-list,
+  .responsibility-list,
+  .benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .requirement-list li,
+  .responsibility-list li,
+  .benefit-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.75rem;
+    color: #555;
+  }
+  
+  .requirement-list li::before,
+  .responsibility-list li::before,
+  .benefit-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4568dc;
+    font-weight: bold;
+  }
+  
+  .internship-detail-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .application-card,
+  .mentor-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+  }
+  
+  .application-card h3,
+  .mentor-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .application-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #3456c8, #9e5aa1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(69, 104, 220, 0.3);
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  .mentor-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mentor-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    border: 3px solid #f0f0f0;
+  }
+  
+  .mentor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mentor-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 0.3rem;
+  }
+  
+  .mentor-info p {
+    color: #666;
+    margin: 0 0 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Loading and not found states */
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 1.2rem;
+    color: #4568dc;
+    position: relative;
+  }
+  
+  .loading-spinner::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgba(69, 104, 220, 0.2);
+    border-left-color: #4568dc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: calc(50% - 45px);
+    left: calc(50% - 15px);
+  }
+  
+  .not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Skills tags (can be added to requirements) */
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .skill-tag {
+    background-color: rgba(69, 104, 220, 0.1);
+    color: #4568dc;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 900px) {
+    .internship-detail-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .internship-details {
+      gap: 1rem;
+    }
+    
+    .detail-item {
+      min-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .internship-detail-page {
+      padding: 1.5rem 1rem;
+    }
+    
+    .internship-detail-header h1 {
+      font-size: 2rem;
+    }
+    
+    .internship-section {
+      padding: 1.5rem;
+    }
+    
+    .detail-item {
+      min-width: 100%;
+    }
+  }

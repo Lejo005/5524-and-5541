@@ -1,0 +1,463 @@
+/* TaskDetail.css - Styling for the task detail page */
+
+.task-detail-page {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .task-detail-header {
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-link {
+    margin-bottom: 1.5rem;
+  }
+  
+  .back-link a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .back-link a:hover {
+    opacity: 0.8;
+    transform: translateX(-5px);
+  }
+  
+  .back-link i {
+    margin-right: 0.5rem;
+  }
+  
+  .task-detail-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .task-internship-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  .task-internship-info i {
+    margin-right: 0.5rem;
+  }
+  
+  .task-status-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .task-status {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .status-assigned {
+    background-color: #fff;
+    color: #4568dc;
+  }
+  
+  .status-in-progress {
+    background-color: #ffebc2;
+    color: #e5a400;
+  }
+  
+  .status-submitted {
+    background-color: #d4edff;
+    color: #007bff;
+  }
+  
+  .status-approved {
+    background-color: #d4ffe4;
+    color: #00aa55;
+  }
+  
+  .status-rejected {
+    background-color: #ffe6e6;
+    color: #d33;
+  }
+  
+  .task-deadline {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  .task-deadline i {
+    margin-right: 0.5rem;
+  }
+  
+  .task-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2rem;
+  }
+  
+  .task-detail-main {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .task-section {
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .task-section:last-child {
+    border-bottom: none;
+  }
+  
+  .task-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #4568dc;
+  }
+  
+  .requirements-list, .resources-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .requirements-list li, .resources-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .requirements-list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4568dc;
+    font-weight: bold;
+  }
+  
+  .resources-list li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #4568dc;
+    font-weight: bold;
+  }
+  
+  .submission-section, .feedback-section {
+    background-color: #f9f9f9;
+  }
+  
+  .submission-timestamp, .feedback-timestamp {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .submission-content, .feedback-content {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    white-space: pre-wrap;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group textarea:focus {
+    border-color: #4568dc;
+    box-shadow: 0 0 0 3px rgba(69, 104, 220, 0.2);
+    outline: none;
+  }
+  
+  .submission-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .alert {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  
+  .alert-danger {
+    background-color: #ffe6e6;
+    color: #d33;
+    border-left: 4px solid #d33;
+  }
+  
+  .alert-success {
+    background-color: #d4ffe4;
+    color: #00aa55;
+    border-left: 4px solid #00aa55;
+  }
+  
+  .task-detail-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .mentor-card, .task-timeline {
+    background-color: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mentor-card h3, .task-timeline h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #4568dc;
+  }
+  
+  .mentor-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mentor-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    border: 3px solid #4568dc;
+  }
+  
+  .mentor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mentor-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  .mentor-info p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .timeline-list {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+  }
+  
+  .timeline-list:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background-color: #eee;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+  }
+  
+  .timeline-item.completed {
+    opacity: 1;
+  }
+  
+  .timeline-indicator {
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #eee;
+    border: 2px solid #fff;
+    z-index: 1;
+  }
+  
+  .timeline-item.completed .timeline-indicator {
+    background-color: #4568dc;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  .timeline-content p {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #4568dc;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3456c8;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(69, 104, 220, 0.3);
+  }
+  
+  .btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .loading-spinner {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #4568dc;
+    font-weight: 500;
+  }
+  
+  .not-found {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    color: #d33;
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .task-detail-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .task-detail-sidebar {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+    .mentor-card, .task-timeline {
+      flex: 1;
+      min-width: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .task-detail-header {
+      padding: 2rem 1.5rem;
+    }
+    
+    .task-detail-header h1 {
+      font-size: 2rem;
+    }
+    
+    .task-status-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .task-section {
+      padding: 1.5rem;
+    }
+    
+    .submission-buttons {
+      flex-direction: column;
+    }
+    
+    .btn {
+      width: 100%;
+    }
+    
+    .task-detail-sidebar {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .task-detail-header h1 {
+      font-size: 1.8rem;
+    }
+    
+    .task-detail-page {
+      padding: 1rem;
+    }
+    
+    .task-section h2 {
+      font-size: 1.5rem;
+    }
+  }

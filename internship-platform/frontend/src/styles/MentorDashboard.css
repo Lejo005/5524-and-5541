@@ -1,0 +1,426 @@
+/* MentorDashboard.css - Modern styling for Mentor Dashboard */
+
+.mentor-dashboard-page {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .mentor-dashboard-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mentor-dashboard-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #4568dc;
+  }
+  
+  .mentor-dashboard-header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Dashboard Tabs */
+  .dashboard-tabs {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tab-button {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #666;
+    position: relative;
+  }
+  
+  .tab-button:hover {
+    color: #4568dc;
+  }
+  
+  .tab-button.active {
+    color: #4568dc;
+  }
+  
+  .tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+    border-radius: 3px 3px 0 0;
+  }
+  
+  /* Dashboard Content */
+  .dashboard-content {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+  }
+  
+  /* Section Headers */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #3456c8, #9559a1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(69, 104, 220, 0.3);
+  }
+  
+  .btn-secondary {
+    background-color: #f0f0f0;
+    color: #4568dc;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Internship List */
+  .internship-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .internship-item {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .internship-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .internship-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .internship-details p {
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+  
+  .internship-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .internship-actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  /* Application List */
+  .application-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .application-item {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .application-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .application-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .application-details p {
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+  
+  .application-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .application-date {
+    color: #777;
+  }
+  
+  .application-actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  /* Task List */
+  .task-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .task-item {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .task-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .task-details p {
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+  
+  .task-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .task-deadline {
+    color: #777;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  /* Status badges */
+  .status-open {
+    background-color: #e3f2fd;
+    color: #2196f3;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .status-closed {
+    background-color: #ffebee;
+    color: #f44336;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .status-pending {
+    background-color: #fff8e1;
+    color: #ffa000;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .status-accepted {
+    background-color: #e8f5e9;
+    color: #4caf50;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .status-rejected {
+    background-color: #ffebee;
+    color: #f44336;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .status-assigned {
+    background-color: #e0f7fa;
+    color: #00bcd4;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .status-in-progress {
+    background-color: #e3f2fd;
+    color: #2196f3;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .status-submitted {
+    background-color: #f3e5f5;
+    color: #9c27b0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  /* Empty States */
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .empty-state p {
+    color: #777;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Filter Controls */
+  .filter-controls {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .filter-select {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    font-family: inherit;
+    color: #555;
+    background-color: white;
+  }
+  
+  /* Loading State */
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 1.2rem;
+    color: #4568dc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mentor-dashboard-page {
+      padding: 1.5rem;
+    }
+    
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .internship-item, .application-item, .task-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .internship-actions, .application-actions, .task-actions {
+      margin-top: 1rem;
+      align-self: flex-end;
+    }
+    
+    .dashboard-tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 0.5rem;
+    }
+    
+    .tab-button {
+      padding: 0.75rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mentor-dashboard-header h1 {
+      font-size: 2rem;
+    }
+    
+    .internship-meta, .application-meta, .task-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
